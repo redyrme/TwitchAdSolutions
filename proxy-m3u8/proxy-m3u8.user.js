@@ -2,9 +2,9 @@
 // @name         TwitchAdSolutions
 // @namespace    https://github.com/pixeltris/TwitchAdSolutions
 // @version      1.1
-// @updateURL    https://github.com/pixeltris/TwitchAdSolutions/raw/master/dyn-skip-midroll/dyn-skip-midroll.user.js
-// @downloadURL  https://github.com/pixeltris/TwitchAdSolutions/raw/master/dyn-skip-midroll/dyn-skip-midroll.user.js
-// @description  Multiple solutions for blocking Twitch ads (dyn-skip-midroll)
+// @updateURL    https://github.com/pixeltris/TwitchAdSolutions/raw/master/proxy-m3u8/proxy-m3u8.user.js
+// @downloadURL  https://github.com/pixeltris/TwitchAdSolutions/raw/master/proxy-m3u8/proxy-m3u8.user.js
+// @description  Multiple solutions for blocking Twitch ads (proxy-m3u8)
 // @author       pixeltris
 // @match        *://*.twitch.tv/*
 // @run-at       document-start
@@ -19,15 +19,15 @@
         scope.OPT_MODE_LOW_RES = false;
         scope.OPT_MODE_EMBED = false;
         scope.OPT_MODE_STRIP_AD_SEGMENTS = false;
-        scope.OPT_MODE_NOTIFY_ADS_WATCHED = true;
-        scope.OPT_MODE_NOTIFY_ADS_WATCHED_ATTEMPTS = 1;
+        scope.OPT_MODE_NOTIFY_ADS_WATCHED = false;
+        scope.OPT_MODE_NOTIFY_ADS_WATCHED_ATTEMPTS = 2;// Larger values might increase load time. Lower values may increase ad chance.
         scope.OPT_MODE_NOTIFY_ADS_WATCHED_MIN_REQUESTS = true;
-        scope.OPT_MODE_NOTIFY_ADS_WATCHED_RELOAD_PLAYER_ON_AD_SEGMENT = true;
+        scope.OPT_MODE_NOTIFY_ADS_WATCHED_RELOAD_PLAYER_ON_AD_SEGMENT = false;
         scope.OPT_MODE_NOTIFY_ADS_WATCHED_RELOAD_PLAYER_ON_AD_SEGMENT_DELAY = 0;
-        scope.OPT_MODE_PROXY_M3U8 = '';
-        scope.OPT_MODE_PROXY_M3U8_OBFUSCATED = false;
+        scope.OPT_MODE_PROXY_M3U8 = 'Ax0ZHhYNF0QLXg8PFBsRBgIfR0MVWQUJBVwFVBJBHAYfBQBFS0UcVhhM';
+        scope.OPT_MODE_PROXY_M3U8_OBFUSCATED = true;
         scope.OPT_MODE_PROXY_M3U8_FULL_URL = false;
-        scope.OPT_MODE_PROXY_M3U8_PARTIAL_URL = false;
+        scope.OPT_MODE_PROXY_M3U8_PARTIAL_URL = true;
         scope.OPT_VIDEO_SWAP_PLAYER_TYPE = 'picture-by-picture';
         scope.OPT_BACKUP_PLAYER_TYPE = 'picture-by-picture';
         scope.OPT_INITIAL_M3U8_ATTEMPTS = 1;
